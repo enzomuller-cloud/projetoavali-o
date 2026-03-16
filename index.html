@@ -181,12 +181,25 @@
             height: 100%;
             background: #1a0000;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             color: #ff0000;
-            font-size: 1.5rem;
+            font-size: 0.9rem;
             font-weight: bold;
             border-right: 1px solid #333333;
+            text-align: center;
+            line-height: 1.3;
+            padding: 0.5rem;
+            white-space: pre-line;
+            font-family: monospace;
+            text-transform: uppercase;
+        }
+
+        .product-image span {
+            color: white;
+            font-size: 0.8rem;
+            display: block;
         }
 
         .product-info {
@@ -374,14 +387,6 @@
             height: 100vh;
             overflow: hidden;
         }
-
-        /* Container principal para scroll interno apenas nos produtos */
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
     </style>
 </head>
 <body>
@@ -407,15 +412,15 @@
     </div>
 
     <div class="products-container">
-        <!-- Luvas de Muay Thai -->
+        <!-- 1. Luvas BGVL6 -->
         <div class="product-card">
             <div class="product-image">
-                🥊<br>TWINS
+                WINS<br>SPECIAL<br>TWINS
             </div>
             <div class="product-info">
                 <span class="product-category">LUVAS</span>
                 <h3 class="product-name">Luvas BGVL6</h3>
-                <p class="product-description">Couro legítimo, espuma tripla densidade, punho largo.</p>
+                <p class="product-description">Couro legítimo, espuma tripla densidade, punho largo. Edição especial TWINS.</p>
                 <div class="product-price">R$ 549,90 <small>à vista</small></div>
                 <div class="product-installments">10x R$ 54,99</div>
                 <div class="product-buttons">
@@ -425,14 +430,15 @@
             </div>
         </div>
 
+        <!-- 2. Luvas BGVL16 -->
         <div class="product-card">
             <div class="product-image">
-                🥊<br>TWINS
+                WINS<br>SPECIAL<br>14
             </div>
             <div class="product-info">
                 <span class="product-category">LUVAS</span>
                 <h3 class="product-name">Luvas BGVL16</h3>
-                <p class="product-description">Modelo clássico, couro sintético, fechamento velcro.</p>
+                <p class="product-description">Modelo clássico, couro sintético, fechamento velcro. Tamanho 14 oz.</p>
                 <div class="product-price">R$ 399,90 <small>à vista</small></div>
                 <div class="product-installments">8x R$ 49,99</div>
                 <div class="product-buttons">
@@ -442,16 +448,34 @@
             </div>
         </div>
 
-        <!-- Caneleiras -->
+        <!-- 3. Caneleira Kids -->
         <div class="product-card">
-            <div class="discount-badge">-15%</div>
+            <div class="discount-badge">-10%</div>
             <div class="product-image">
-                🦵<br>TWINS
+                WIN'S<br>WIN'S<br>PECIAL<br>PECIAL
+            </div>
+            <div class="product-info">
+                <span class="product-category">CANELEIRAS</span>
+                <h3 class="product-name">Caneleira Kids</h3>
+                <p class="product-description">Modelo infantil, azul celeste, proteção leve e confortável para iniciação.</p>
+                <div class="product-price">R$ 179,90 <small>à vista</small></div>
+                <div class="product-installments">5x R$ 35,98</div>
+                <div class="product-buttons">
+                    <button class="btn-buy">COMPRAR</button>
+                    <button class="btn-cart">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Caneleira SP-5 -->
+        <div class="product-card">
+            <div class="product-image">
+                WINS<br>TWINS<br>SPECIAL
             </div>
             <div class="product-info">
                 <span class="product-category">CANELEIRAS</span>
                 <h3 class="product-name">Caneleira SP-5</h3>
-                <p class="product-description">Proteção completa, espuma alta densidade.</p>
+                <p class="product-description">Proteção completa, espuma alta densidade, modelo demon thai shark.</p>
                 <div class="product-price">R$ 289,90 <small>à vista</small></div>
                 <div class="product-installments">6x R$ 48,32</div>
                 <div class="product-buttons">
@@ -461,32 +485,15 @@
             </div>
         </div>
 
+        <!-- 5. Shorts Muay Thai -->
         <div class="product-card">
             <div class="product-image">
-                🦵<br>TWINS
-            </div>
-            <div class="product-info">
-                <span class="product-category">CANELEIRAS</span>
-                <h3 class="product-name">Caneleira Kids</h3>
-                <p class="product-description">Modelo infantil, proteção leve e confortável.</p>
-                <div class="product-price">R$ 199,90 <small>à vista</small></div>
-                <div class="product-installments">5x R$ 39,98</div>
-                <div class="product-buttons">
-                    <button class="btn-buy">COMPRAR</button>
-                    <button class="btn-cart">🛒</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Roupas -->
-        <div class="product-card">
-            <div class="product-image">
-                👕<br>TWINS
+                WORLD<br>COMBAT<br>2018<br>WORLD COMBAT
             </div>
             <div class="product-info">
                 <span class="product-category">SHORTS</span>
                 <h3 class="product-name">Shorts Muay Thai</h3>
-                <p class="product-description">Tecido leve, bordados tradicionais.</p>
+                <p class="product-description">Tecido leve, bordados tradicionais, modelo World Combat preto.</p>
                 <div class="product-price">R$ 159,90 <small>à vista</small></div>
                 <div class="product-installments">4x R$ 39,98</div>
                 <div class="product-buttons">
@@ -496,15 +503,16 @@
             </div>
         </div>
 
+        <!-- 6. Camiseta Dry Fit -->
         <div class="product-card">
             <div class="discount-badge">-20%</div>
             <div class="product-image">
-                👕<br>TWINS
+                SPIRIT<br>M<br>TWINS<br>SPIRIT
             </div>
             <div class="product-info">
                 <span class="product-category">CAMISETAS</span>
                 <h3 class="product-name">Camiseta Dry Fit</h3>
-                <p class="product-description">Tecido dry fit, estampa serigrafada.</p>
+                <p class="product-description">Tecido dry fit, estampa serigrafada, modelo Spirit M.</p>
                 <div class="product-price">R$ 89,90 <small>à vista</small></div>
                 <div class="product-installments">3x R$ 29,97</div>
                 <div class="product-buttons">
